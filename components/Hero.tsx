@@ -79,11 +79,10 @@ export function Hero() {
 
         <motion.p
           variants={item}
-          className="mt-6 max-w-2xl text-balance text-lg text-muted"
+          className="mt-6 max-w-2xl text-balance text-lg italic text-muted"
         >
-          A Big Loop Studio cria experiências digitais com Unreal Engine,
-          Blender e Maya — de assets estilizados a jogos completos, do
-          conceito ao lançamento.
+          &ldquo;Se for difícil, eu faço. Se for impossível, me dá 5
+          minutos.&rdquo;
         </motion.p>
 
         <motion.div variants={item} className="mt-10 flex flex-col gap-4 sm:flex-row">
