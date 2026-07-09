@@ -1,4 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { Logo } from "./Logo";
 
 const NAV_ITEMS = [
@@ -10,9 +14,26 @@ const NAV_ITEMS = [
 ];
 
 export function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const { scrollY, scrollYProgress } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setScrolled(latest > 24);
+  });
+
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink/80 backdrop-blur-md">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <header
+      className={`fixed inset-x-0 top-0 z-50 border-b transition-colors duration-300 ${
+        scrolled
+          ? "border-white/5 bg-ink/85 backdrop-blur-md"
+          : "border-transparent bg-transparent"
+      }`}
+    >
+      <nav
+        className={`mx-auto flex max-w-6xl items-center justify-between px-6 transition-[padding] duration-300 ${
+          scrolled ? "py-3" : "py-5"
+        }`}
+      >
         <Link href="#top">
           <Logo />
         </Link>
@@ -35,6 +56,10 @@ export function Navbar() {
           Fale conosco
         </a>
       </nav>
+      <motion.div
+        className="h-[2px] origin-left bg-accent"
+        style={{ scaleX: scrollYProgress }}
+      />
     </header>
   );
 }

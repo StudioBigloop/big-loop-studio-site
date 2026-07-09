@@ -1,11 +1,13 @@
 import { Clock } from "lucide-react";
 import { LINKS } from "@/lib/links";
+import { Reveal } from "./motion/Reveal";
+import { TapLink } from "./motion/TapLink";
 
 export function SteamSection() {
   return (
     <section id="steam" className="bg-surface py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="flex flex-col items-start gap-8 rounded-3xl border border-white/5 bg-surface2 p-10 sm:flex-row sm:items-center sm:justify-between">
+        <Reveal className="flex flex-col items-start gap-8 rounded-3xl border border-white/5 bg-surface2 p-10 sm:flex-row sm:items-center sm:justify-between">
           <div className="max-w-xl">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">
               Steam
@@ -24,16 +26,14 @@ export function SteamSection() {
               <Clock className="h-3.5 w-3.5" />
               Página de empresa em breve
             </span>
-            <a
+            <TapLink
               href={LINKS.steam}
-              target="_blank"
-              rel="noreferrer noopener"
               className="rounded-full bg-cream px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-accent"
             >
               Ver perfil na Steam
-            </a>
+            </TapLink>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

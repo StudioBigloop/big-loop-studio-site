@@ -1,6 +1,8 @@
 import { Instagram, Mail, Palette, Music2, Store } from "lucide-react";
 import { Logo } from "./Logo";
 import { LINKS } from "@/lib/links";
+import { Reveal, RevealGroup, RevealItem } from "./motion/Reveal";
+import { TapLink } from "./motion/TapLink";
 
 const SOCIALS = [
   { label: "Instagram", href: LINKS.instagram, icon: Instagram },
@@ -13,7 +15,7 @@ export function Footer() {
   return (
     <footer id="contato" className="bg-ink py-20">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="flex flex-col items-start justify-between gap-10 border-b border-white/5 pb-14 sm:flex-row">
+        <Reveal className="flex flex-col items-start justify-between gap-10 border-b border-white/5 pb-14 sm:flex-row">
           <div className="max-w-sm">
             <Logo />
             <p className="mt-5 text-sm leading-relaxed text-muted">
@@ -29,21 +31,20 @@ export function Footer() {
             </a>
           </div>
 
-          <div className="flex flex-wrap gap-3">
+          <RevealGroup className="flex flex-wrap gap-3">
             {SOCIALS.map(({ label, href, icon: Icon }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2.5 text-sm font-medium text-cream transition-colors hover:border-accent hover:text-accent"
-              >
-                <Icon className="h-4 w-4" />
-                {label}
-              </a>
+              <RevealItem key={label}>
+                <TapLink
+                  href={href}
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2.5 text-sm font-medium text-cream transition-colors hover:border-accent hover:text-accent"
+                >
+                  <Icon className="h-4 w-4" />
+                  {label}
+                </TapLink>
+              </RevealItem>
             ))}
-          </div>
-        </div>
+          </RevealGroup>
+        </Reveal>
 
         <p className="mt-8 text-center text-xs text-muted">
           © {new Date().getFullYear()} Big Loop Studio. Todos os direitos

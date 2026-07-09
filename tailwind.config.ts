@@ -26,6 +26,15 @@ const config: Config = {
       backgroundSize: {
         grid: "100% 100%, 40px 40px, 40px 40px",
       },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translate(-50%, -50%) scale(1)" },
+          "50%": { transform: "translate(-50%, -54%) scale(1.1)" },
+        },
+      },
+      animation: {
+        float: "float 9s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
