@@ -14,7 +14,7 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bigloopstudio.vercel.app"),
+  metadataBase: new URL("https://big-loop-studio-site.vercel.app"),
   title: "Big Loop Studio — Estúdio de Jogos e Arte 3D",
   description:
     "Big Loop Studio é um estúdio de desenvolvimento de jogos e arte 3D. Confira nossos assets na Fab, jogos no Roblox e em breve na Steam.",
