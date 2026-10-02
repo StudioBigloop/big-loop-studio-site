@@ -5,9 +5,9 @@ import { Footer } from "@/components/Footer";
 import { LINKS } from "@/lib/links";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidade — Big Loop Studio",
+  title: "Política de Privacidade — BringmeStudio",
   description:
-    "Como os jogos e apps da Big Loop Studio tratam dados: AdMob, Google Play Games e progresso salvo no aparelho.",
+    "Como os jogos e apps da BringmeStudio tratam dados: AdMob, Google Play Games e progresso salvo no aparelho.",
 };
 
 const UPDATED = "2 de outubro de 2026";
@@ -46,7 +46,8 @@ export default function Privacidade() {
 
         <Section title="A quem se aplica">
           <p>
-            Esta política vale para os jogos e apps publicados pela Big Loop Studio no Google Play,
+            Esta política vale para os jogos e apps publicados pela BringmeStudio (razão social Andre
+            Casagrande, CNPJ 67.307.831/0001-81) no Google Play,
             incluindo <strong className="text-cream">Capivaras: Defesa da Lagoa</strong> e{" "}
             <strong className="text-cream">Empilha!</strong>. Ela explica quais dados são usados,
             por quem e para quê.
@@ -55,7 +56,7 @@ export default function Privacidade() {
 
         <Section title="Dados que nós coletamos">
           <p>
-            A Big Loop Studio não pede nome, e-mail, telefone nem cria contas próprias nos jogos. O
+            A BringmeStudio não pede nome, e-mail, telefone nem cria contas próprias nos jogos. O
             progresso (fases liberadas, estrelas, configurações de som) fica salvo apenas no seu
             aparelho e é apagado se você desinstalar o jogo.
           </p>
@@ -95,7 +96,7 @@ export default function Privacidade() {
 
         <Section title="Compras no app">
           <p>
-            Compras são processadas pelo Google Play. A Big Loop Studio recebe apenas a confirmação
+            Compras são processadas pelo Google Play. A BringmeStudio recebe apenas a confirmação
             da compra para liberar o item, nunca os dados do seu cartão ou forma de pagamento.
           </p>
         </Section>
@@ -118,7 +119,7 @@ export default function Privacidade() {
 
         <Section title="Contato">
           <p>
-            Big Loop Studio —{" "}
+            BringmeStudio — Andre Casagrande, CNPJ 67.307.831/0001-81 —{" "}
             <span className="select-all font-semibold text-cream">{LINKS.email}</span>
           </p>
           <p>Se esta política mudar, a data no topo da página será atualizada.</p>

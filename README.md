@@ -1,6 +1,6 @@
-# Big Loop Studio — Site
+# BringmeStudio — Site
 
-Site institucional da Big Loop Studio. Next.js 14 (App Router) + TypeScript + Tailwind CSS.
+Site institucional da BringmeStudio (Andre Casagrande — CNPJ 67.307.831/0001-81). Next.js 14 (App Router) + TypeScript + Tailwind CSS.
 
 ## Estrutura
 

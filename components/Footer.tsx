@@ -47,8 +47,8 @@ export function Footer() {
         </Reveal>
 
         <p className="mt-8 text-center text-xs text-muted">
-          © {new Date().getFullYear()} Big Loop Studio. Todos os direitos
-          reservados. ·{" "}
+          © {new Date().getFullYear()} BringmeStudio · Andre Casagrande · CNPJ
+          67.307.831/0001-81. Todos os direitos reservados. ·{" "}
           <a href="/privacidade" className="underline-offset-4 hover:text-accent hover:underline">
             Política de Privacidade
           </a>

@@ -31,12 +31,12 @@ export function About() {
             Um estúdio de jogos e arte 3D comprometido com excelência
           </h2>
           <p className="mt-6 text-balance text-lg leading-relaxed text-muted">
-            A Big Loop Studio é um estúdio de desenvolvimento de jogos e arte
+            A BringmeStudio é um estúdio de desenvolvimento de jogos e arte
             3D comprometido com excelência visual e inovação técnica.
             Trabalhamos com Unreal Engine, Blender e Maya para criar
             experiências digitais impactantes em uma ampla gama de estilos —
-            do estilizado ao realista. Criamos com propósito. Evoluímos em
-            loop.
+            do estilizado ao realista. Criamos com propósito. Evoluímos
+            sempre.
           </p>
         </Reveal>
 

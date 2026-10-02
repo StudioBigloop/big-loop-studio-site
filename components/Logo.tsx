@@ -37,7 +37,7 @@ export function Logo({ className = "" }: { className?: string }) {
     <div className={`flex items-center gap-2.5 ${className}`}>
       <LogoMark className="h-8 w-8 text-cream" />
       <span className="font-display text-lg leading-none tracking-tight text-cream">
-        BIGLOOP<span className="block text-[0.55em] tracking-[0.35em] text-muted">STUDIO</span>
+        BRINGME<span className="block text-[0.55em] tracking-[0.35em] text-muted">STUDIO</span>
       </span>
     </div>
   );

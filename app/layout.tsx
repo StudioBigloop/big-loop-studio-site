@@ -15,11 +15,11 @@ const sans = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://big-loop-studio-site.vercel.app"),
-  title: "Big Loop Studio — Estúdio de Jogos e Arte 3D",
+  title: "BringmeStudio — Estúdio de Jogos e Arte 3D",
   description:
-    "Big Loop Studio é um estúdio de desenvolvimento de jogos e arte 3D. Confira nossos assets na Fab, jogos no Roblox e em breve na Steam.",
+    "BringmeStudio é um estúdio de desenvolvimento de jogos e arte 3D. Confira nossos assets na Fab, jogos no Roblox e em breve na Steam.",
   keywords: [
-    "Big Loop Studio",
+    "BringmeStudio",
     "Unreal Engine",
     "Blender",
     "Maya",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "arte 3D",
   ],
   openGraph: {
-    title: "Big Loop Studio — Estúdio de Jogos e Arte 3D",
+    title: "BringmeStudio — Estúdio de Jogos e Arte 3D",
     description:
       "Grandeza na criação. Evolução constante. Assets na Fab, jogos no Roblox e em breve na Steam.",
     type: "website",
